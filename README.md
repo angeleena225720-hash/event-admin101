@@ -1,19 +1,25 @@
-# Event Registration – Admin Panel (MERN)
+# Eventura - Event Registration Admin Panel (MERN)
 
-## 1. Backend
-cd server
-npm install
-cp .env.example .env      # paste your MongoDB Atlas connection string in MONGO_URI
-npm run dev               # runs on http://localhost:5001
+## Backend
 
-## 2. Frontend (new terminal)
-cd client
-npm install
-npm run dev               # runs on http://localhost:5173
+    cd backend
+    npm install
+    npm run dev
+
+Runs on http://localhost:5001. The .env file is included in this repository.
+
+## Frontend (open a new terminal)
+
+    cd frontend
+    npm install
+    npm run dev
+
+Runs on http://localhost:5173.
 
 ## REST API
-GET    /api/events        list events
-GET    /api/events/:id    single event
-POST   /api/events        create event {name, description, date, venue}
-PUT    /api/events/:id    update event
-DELETE /api/events/:id    delete event
+
+- GET /api/events - list events
+- GET /api/events/:id - get one event
+- POST /api/events - create an event
+- PUT /api/events/:id - update an event
+- DELETE /api/events/:id - delete an event
